@@ -3,10 +3,10 @@ import React from "react";
 
 const MainHeader = () => {
   return (
-    <div className="flex justify-between items-center mb-4 bg-purple-700 text-white p-4 rounded-t-lg">
+    <div className="flex justify-between items-center mb-4">
       <div className="flex items-center space-x-2">
         <h1 className="text-2xl font-bold">Students</h1>
-        <span className="text-gray-200 bg-gray-400 rounded-full px-2 py-1 text-sm">82</span>
+        <span className="text-gray-500 bg-gray-200 rounded-full px-2 py-1 text-sm">82</span>
       </div>
       <div className="flex items-center space-x-4">
         <input type="text" placeholder="Search" className="border rounded p-2" />
