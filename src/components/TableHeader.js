@@ -3,8 +3,8 @@ import React from "react";
 
 const TableHeader = () => {
   return (
-    <div className="flex justify-between items-center mb-4">
-      <select className="border rounded p-2">
+    <div className="flex justify-between items-center mb-4 p-4 bg-purple-700 text-white rounded-t-lg">
+      <select className="border rounded p-2 text-black">
         <option>Big Ben</option>
       </select>
       <div className="flex items-center space-x-2">

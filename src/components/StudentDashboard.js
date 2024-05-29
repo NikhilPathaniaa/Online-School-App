@@ -1,13 +1,15 @@
 // src/components/StudentDashboard.js
 import React from "react";
+import Sidebar from "./Sidebar";
 import MainHeader from "./MainHeader";
 import TableHeader from "./TableHeader";
 import StudentTable from "./StudentTable";
 
 const StudentDashboard = () => {
   return (
-    <div className="min-h-screen bg-purple-100 p-6">
-      <div className="bg-white rounded-lg shadow-md p-4">
+    <div className="flex h-screen bg-gray-100">
+      <Sidebar />
+      <div className="flex-1 p-6">
         <MainHeader />
         <TableHeader />
         <StudentTable />
