@@ -1,6 +1,6 @@
 // src/components/MainHeader.js
 import React from "react";
-import { CiSearch, CiBellOn, CiViewList, CiUser } from "react-icons/ci";
+import { CiBellOn, CiViewList, CiUser } from "react-icons/ci";
 
 const MainHeader = () => {
   return (
@@ -10,12 +10,12 @@ const MainHeader = () => {
         <span className="text-gray-500 bg-gray-200 rounded-full px-2 py-1 text-sm">82</span>
       </div>
       <div className="flex items-center space-x-4">
-        <label for="table-search" class="sr-only">
+        <label for="table-search" className="sr-only">
           Search
         </label>
-        <div class="relative">
-          <div class="absolute inset-y-0 rtl:inset-r-0 start-0 flex items-center ps-3 pointer-events-none">
-            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+        <div className="relative">
+          <div className="absolute inset-y-0 rtl:inset-r-0 start-0 flex items-center ps-3 pointer-events-none">
+            <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
             </svg>
           </div>
