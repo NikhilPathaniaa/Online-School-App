@@ -17,7 +17,7 @@ const FilterDropdown = ({ selectedFields, setSelectedFields }) => {
 
   return (
     <div className="relative">
-      <button className=" text-white rounded px-4 py-2" onClick={() => setIsOpen(!isOpen)}>
+      <button className=" text-white px-2 py-2 border border-[#6754b3] rounded-full" onClick={() => setIsOpen(!isOpen)}>
         <CiFilter size={24} className="text-[#6754b3]" />
       </button>
       {isOpen && (
