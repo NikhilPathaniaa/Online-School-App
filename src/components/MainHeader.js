@@ -4,7 +4,7 @@ import { CiSearch, CiBellOn, CiViewList, CiUser } from "react-icons/ci";
 
 const MainHeader = () => {
   return (
-    <div className="flex justify-between items-center mb-4 p-6 pl-8 pb-0">
+    <div className="flex justify-between items-center mb-4 pt-3 p-6 pl-8 pb-0">
       <div className="flex items-center space-x-2">
         <h1 className="text-2xl font-bold">Students</h1>
         <span className="text-[#6754b3] w-9 rounded-full px-2 py-1 text-sm border border-[#6754b3]">82</span>
