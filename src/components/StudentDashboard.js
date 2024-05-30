@@ -1,6 +1,6 @@
 // src/components/StudentDashboard.js
 import React from "react";
-import Sidebar from "./Sidebar";
+// import Sidebar from "./Sidebar";
 import MainHeader from "./MainHeader";
 import TableHeader from "./TableHeader";
 import StudentTable from "./StudentTable";
@@ -8,7 +8,7 @@ import StudentTable from "./StudentTable";
 const StudentDashboard = () => {
   return (
     <div className="flex h-screen bg-gray-100">
-      <Sidebar />
+      {/* <Sidebar /> */}
       <div className="flex-1 p-4">
         <MainHeader />
         <hr />
