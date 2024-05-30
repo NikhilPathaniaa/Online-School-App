@@ -4,7 +4,7 @@ import { FaPlane } from "react-icons/fa"; // Assuming the logo looks like a plan
 
 const Sidebar = () => {
   return (
-    <div className="h-screen w-20 bg-purple-700 text-white flex flex-col items-center py-4 space-y-6">
+    <div className="h-screen w-20 bg-[#6754b3] text-white flex flex-col items-center py-4 space-y-6">
       {/* Logo at the top */}
       <div className="flex items-center justify-center w-full mb-4">
         <FaPlane size={28} />
