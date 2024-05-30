@@ -1,7 +1,7 @@
 // src/components/MainHeader.js
 import React from "react";
 import { CiSearch, CiBellOn, CiViewList, CiUser } from "react-icons/ci";
-
+import { IoIosArrowDown } from "react-icons/io";
 const MainHeader = () => {
   return (
     <div className="flex justify-between items-center mb-4 pt-3 p-6 pl-8 pb-0">
@@ -21,13 +21,17 @@ const MainHeader = () => {
             placeholder="Search"
           />
         </div>
-        <button className="bg-gray-200 p-2 rounded-full">
-          <CiViewList size={24} className="text-[#6754b3]" />
+
+        <button className="p-2 rounded-full">
+          <CiViewList size={30} className="text-[#6754b3]" />
         </button>
-        <button className="bg-gray-200 p-2 rounded-full">
-          <CiBellOn size={24} className="text-[#6754b3]" />
+        <button className="p-2 rounded-full">
+          <CiBellOn size={30} className="text-[#6754b3]" />
         </button>
-        <CiUser size={24} className="text-[#6754b3]" />
+        <button className="p-2 bg-gray-200 rounded-full">
+          <CiUser size={40} className="text-[#6754b3]" />
+        </button>
+        <IoIosArrowDown className="text-[#6754b3]" />
       </div>
     </div>
   );

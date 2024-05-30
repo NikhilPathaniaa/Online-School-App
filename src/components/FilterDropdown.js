@@ -21,7 +21,7 @@ const FilterDropdown = ({ selectedFields, setSelectedFields }) => {
         <CiFilter size={24} className="text-[#6754b3]" />
       </button>
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-56 bg-white border rounded shadow-lg">
+        <div className={`absolute right-0 mt-2 w-56 bg-white border rounded shadow-lg ${fields.length > 12 ? "max-h-64 overflow-y-auto" : ""}`}>
           {fields.map((field) => (
             <label key={field} className="block px-4 py-2">
               <input type="checkbox" checked={selectedFields.includes(field)} onChange={() => handleCheckboxChange(field)} disabled={!selectedFields.includes(field) && selectedFields.length >= 7} className="mr-2" />
