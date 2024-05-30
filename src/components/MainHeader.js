@@ -7,7 +7,7 @@ const MainHeader = () => {
     <div className="flex justify-between items-center mb-4">
       <div className="flex items-center space-x-2">
         <h1 className="text-2xl font-bold">Students</h1>
-        <span className="text-[#6754b3] bg-gray-200 rounded-full px-2 py-1 text-sm">82</span>
+        <span className="text-[#6754b3] w-9 rounded-full px-2 py-1 text-sm border border-[#6754b3]">82</span>
       </div>
       <div className="flex items-center space-x-4">
         <div className="relative">
