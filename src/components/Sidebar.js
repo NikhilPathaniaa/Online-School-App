@@ -6,7 +6,7 @@ const Sidebar = () => {
   return (
     <div className="h-screen w-20 bg-[#6754b3] text-white flex flex-col items-center py-4 space-y-6">
       {/* Logo at the top */}
-      <div className="flex items-center justify-center w-full mb-4 mt-14">
+      <div className="flex items-center justify-center w-full mb-1 mt-14">
         <FaPlane size={40} />
       </div>
       <div></div>
@@ -27,7 +27,7 @@ const Sidebar = () => {
       <div className="flex-1"></div>
 
       {/* Logout icon */}
-      <div className="mb-4">
+      <div className="mb-0">
         <IoLogOut size={24} className="text-[#8d7ccf]" />
       </div>
     </div>
