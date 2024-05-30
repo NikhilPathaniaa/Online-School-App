@@ -1,5 +1,6 @@
 // src/components/MainHeader.js
 import React from "react";
+import { IoPersonCircle } from "react-icons/io5";
 
 const MainHeader = () => {
   return (
