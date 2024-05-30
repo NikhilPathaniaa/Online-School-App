@@ -6,10 +6,11 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
     <div className="flex justify-between items-center mt-4">
       <div>_</div>
       <div>
-        <button onClick={() => onPageChange(currentPage - 1)} disabled={currentPage === 1} className="bg-[#6754b3] text-white rounded px-4 py-2">
+        <button onClick={() => onPageChange(currentPage - 1)} disabled={currentPage === 1} className="bg-[#6754b3] mr-4 text-white w-14 rounded-2xl px-4 py-2">
           &larr;
         </button>
-        <button onClick={() => onPageChange(currentPage + 1)} disabled={currentPage === totalPages} className="bg-[#6754b3] text-white rounded px-4 py-2">
+
+        <button onClick={() => onPageChange(currentPage + 1)} disabled={currentPage === totalPages} className="bg-[#6754b3] text-white w-14 rounded-2xl px-4 py-2">
           &rarr;
         </button>
       </div>

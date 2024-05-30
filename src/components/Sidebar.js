@@ -11,18 +11,18 @@ const Sidebar = () => {
       </div>
 
       {/* Icons */}
-      <IoHome size={24} />
-      <IoPeople size={24} />
-      <IoSchool size={24} />
-      <IoCalendar size={24} />
-      <IoSettings size={24} />
+      <IoHome size={24} className="text-[#8d7ccf]" />
+      <IoPeople size={24} className="text-[#8d7ccf]" />
+      <IoSchool size={24} className="text-[#8d7ccf]" />
+      <IoCalendar size={24} className="text-[#8d7ccf]" />
+      <IoSettings size={24} className="text-[#8d7ccf]" />
 
       {/* Spacer to push logout icon to the bottom */}
       <div className="flex-1"></div>
 
       {/* Logout icon */}
       <div className="mb-4">
-        <IoLogOut size={24} />
+        <IoLogOut size={24} className="text-[#8d7ccf]" />
       </div>
     </div>
   );
