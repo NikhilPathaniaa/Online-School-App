@@ -11,7 +11,8 @@ const StudentDashboard = () => {
       {/* <Sidebar /> */}
       <div className="flex-1 p-4">
         <MainHeader />
-        <hr />
+        <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+        <br />
         <TableHeader />
         <StudentTable />
       </div>
