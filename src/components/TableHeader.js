@@ -1,19 +1,13 @@
 // src/components/TableHeader.js
 import React from "react";
-import { CiFilter } from "react-icons/ci";
 
 const TableHeader = () => {
   return (
-    <div className="flex justify-between items-center mb-4">
-      <select className="border rounded p-2">
+    <div className=" mb-4 p-4">
+      <h1>Select school</h1>
+      <select className="border rounded p-2 text-black">
         <option>Big Ben</option>
       </select>
-      <div className="flex items-center space-x-2">
-        <button className=" p-2 rounded-full">
-          <CiFilter />
-        </button>
-        <button className="bg-purple-500  text-white rounded px-4 py-2">+ Add a student</button>
-      </div>
     </div>
   );
 };
