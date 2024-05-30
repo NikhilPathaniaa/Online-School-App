@@ -13,8 +13,9 @@ const StudentDashboard = () => {
     <div className="flex flex-col lg:flex-row h-screen bg-[#6754b3] text-white">
       <Sidebar />
       {/* <div className="flex-1 p-6 bg-purple-100 rounded-l-lg lg:rounded-l-none lg:rounded-r-lg"> */}
-      <div className="bg-white mt-10 ml-5 w-11/12 h-2/4 text-black rounded-lg">
+      <div className="bg-white mt-5 ml-5 w-11/12 h-2/4 text-black rounded-lg">
         <MainHeader />
+        <hr />
         <div className="flex justify-between items-center pl-4 pr-4">
           <TableHeader />
           <div className="w-8/12"></div>
