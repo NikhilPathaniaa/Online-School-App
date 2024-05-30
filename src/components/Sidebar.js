@@ -6,15 +6,21 @@ const Sidebar = () => {
   return (
     <div className="h-screen w-20 bg-[#6754b3] text-white flex flex-col items-center py-4 space-y-6">
       {/* Logo at the top */}
-      <div className="flex items-center justify-center w-full mb-4">
-        <FaPlane size={28} />
+      <div className="flex items-center justify-center w-full mb-4 mt-14">
+        <FaPlane size={40} />
       </div>
+      <div></div>
+      <div></div>
 
       {/* Icons */}
-      <IoHome size={24} className="text-[#8d7ccf]" />
+      <IoHome size={24} />
+      <div></div>
       <IoPeople size={24} className="text-[#8d7ccf]" />
+      <div></div>
       <IoSchool size={24} className="text-[#8d7ccf]" />
+      <div></div>
       <IoCalendar size={24} className="text-[#8d7ccf]" />
+      <div></div>
       <IoSettings size={24} className="text-[#8d7ccf]" />
 
       {/* Spacer to push logout icon to the bottom */}

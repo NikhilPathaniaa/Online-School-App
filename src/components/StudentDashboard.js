@@ -20,7 +20,7 @@ const StudentDashboard = () => {
           <div className="w-8/12"></div>
           <FilterDropdown selectedFields={selectedFields} setSelectedFields={setSelectedFields} />
           <div className="flex items-center space-x-2">
-            <button className="bg-[#6754b3] text-white rounded px-4 py-2">+ Add a student</button>
+            <button className="bg-[#6754b3] text-white rounded-3xl px-4 py-2">+ Add a student</button>
           </div>
         </div>
         <StudentTable selectedFields={selectedFields} />
