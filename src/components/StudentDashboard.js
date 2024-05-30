@@ -13,8 +13,8 @@ const StudentDashboard = () => {
     <div className="flex flex-col lg:flex-row h-screen bg-purple-700 text-white">
       <Sidebar />
       <div className="flex-1 p-6 bg-purple-100 rounded-l-lg lg:rounded-l-none lg:rounded-r-lg">
-        <MainHeader />
         <div className="bg-white text-black rounded-lg">
+          <MainHeader />
           <div className="flex justify-between items-center p-4">
             <TableHeader />
             <div className="w-4/6"></div>
