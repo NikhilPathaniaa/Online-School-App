@@ -78,7 +78,7 @@ const StudentTable = ({ selectedFields }) => {
               </td>
               {selectedFields.map((field) => (
                 <td key={field} className="py-3 px-4 border border-gray-300">
-                  {student.attributes[field]}
+                  {student.attributes[field] === null ? "--" : student.attributes[field]}
                 </td>
               ))}
             </tr>
