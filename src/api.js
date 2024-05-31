@@ -1,6 +1,6 @@
 // src/api.js
 
-const API_URL = "/student.json";
+const API_URL = "./student.json";
 
 export const fetchStudents = async () => {
   try {
