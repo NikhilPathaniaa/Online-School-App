@@ -3,7 +3,7 @@ import React from "react";
 
 const Pagination = ({ currentPage, totalPages, onPageChange }) => {
   return (
-    <div className="flex justify-between items-center my-5">
+    <div className="flex justify-between items-center my-2 mb-0">
       <div className="m-auto">
         <button
           onClick={() => onPageChange(currentPage - 1)}
