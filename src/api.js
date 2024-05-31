@@ -1,6 +1,6 @@
 // src/api.js
 
-const API_URL = "http://3.223.98.72:1337/api/students";
+const API_URL = "/student.json";
 
 export const fetchStudents = async () => {
   try {
