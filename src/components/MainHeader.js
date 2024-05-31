@@ -2,7 +2,7 @@
 import React from "react";
 import { CiSearch, CiBellOn, CiViewList, CiUser } from "react-icons/ci";
 import { IoIosArrowDown } from "react-icons/io";
-const MainHeader = () => {
+const MainHeader = ({ searchQuery, setSearchQuery }) => {
   return (
     <div className="flex justify-between items-center mb-4 pt-3 p-6 pl-8 pb-0">
       <div className="flex items-center space-x-2">
@@ -10,18 +10,20 @@ const MainHeader = () => {
         <span className="text-[#6754b3] w-9 rounded-full px-2 py-1 text-sm border border-[#6754b3]">82</span>
       </div>
       <div className="flex items-center space-x-4">
+        {/* search start */}
         <div className="relative">
           <div className="absolute inset-y-0 rtl:inset-r-0 start-0 flex items-center ps-3 pointer-events-none">
             <CiSearch size={24} className="text-[#6754b3]" />
           </div>
           <input
             type="text"
-            id="table-search-users"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
             className="block pt-2 ps-10  border-gray-300 rounded-lg w-80 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:focus:ring-blue-500 dark:focus:border-blue-500 text-lg align-text-top"
             placeholder="Search"
           />
         </div>
-
+        {/* search end */}
         <button className="p-2 rounded-full">
           <CiViewList size={30} className="text-[#6754b3]" />
         </button>

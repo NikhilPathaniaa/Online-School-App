@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { fetchStudents } from "../api";
 import Pagination from "./Pagination";
 
-const StudentTable = ({ selectedFields }) => {
+const StudentTable = ({ selectedFields, searchQuery }) => {
   const [students, setStudents] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -25,6 +25,8 @@ const StudentTable = ({ selectedFields }) => {
     getStudents();
   }, []);
 
+  const filteredStudents = students.filter((student) => selectedFields.some((field) => student.attributes[field]?.toString().includes(searchQuery)));
+
   const indexOfLastStudent = currentPage * studentsPerPage;
   const indexOfFirstStudent = indexOfLastStudent - studentsPerPage;
   const currentStudents = students.slice(indexOfFirstStudent, indexOfLastStudent);
@@ -36,6 +38,8 @@ const StudentTable = ({ selectedFields }) => {
 
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error fetching students: {error.message}</div>;
+
+  const studentsToDisplay = searchQuery ? filteredStudents.slice(0, studentsPerPage) : currentStudents;
 
   return (
     <div className="bg-white rounded-b-lg p-4 pt-0">
@@ -49,7 +53,7 @@ const StudentTable = ({ selectedFields }) => {
                   type="checkbox"
                   className="w-4 h-4 text-[#6754b3] bg-gray-100 border-gray-300 rounded focus:ring-[#6754b3] dark:focus:ring-[#6754b3] dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 />
-                <label for="checkbox-all-search" className="sr-only">
+                <label htmlFor="checkbox-all-search" className="sr-only">
                   checkbox
                 </label>
               </div>
@@ -63,16 +67,16 @@ const StudentTable = ({ selectedFields }) => {
         </thead>
 
         <tbody>
-          {currentStudents.map((student, index) => (
+          {studentsToDisplay.map((student, index) => (
             <tr key={index} className="border-b border-gray-300">
               <td className="w-4 p-4">
                 <div className="flex items-center">
                   <input
-                    id="checkbox-table-search-2"
+                    id={`checkbox-table-search-${index}`}
                     type="checkbox"
                     className="w-4 h-4 text-[#6754b3] bg-gray-100 border-gray-300 rounded focus:ring-[#6754b3] dark:focus:ring-[#6754b3] dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                   />
-                  <label for="checkbox-table-search-2" className="sr-only">
+                  <label htmlFor={`checkbox-table-search-${index}`} className="sr-only">
                     checkbox
                   </label>
                 </div>
@@ -86,7 +90,7 @@ const StudentTable = ({ selectedFields }) => {
           ))}
         </tbody>
       </table>
-      <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={handlePageChange} />
+      {!searchQuery && <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={handlePageChange} />}
     </div>
   );
 };
