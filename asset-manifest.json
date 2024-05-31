@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Online-School-App/static/css/main.ec6d9a33.css",
-    "main.js": "/Online-School-App/static/js/main.45098c00.js",
+    "main.js": "/Online-School-App/static/js/main.b0d11db3.js",
     "static/js/453.b776ef6b.chunk.js": "/Online-School-App/static/js/453.b776ef6b.chunk.js",
     "index.html": "/Online-School-App/index.html",
     "main.ec6d9a33.css.map": "/Online-School-App/static/css/main.ec6d9a33.css.map",
-    "main.45098c00.js.map": "/Online-School-App/static/js/main.45098c00.js.map",
+    "main.b0d11db3.js.map": "/Online-School-App/static/js/main.b0d11db3.js.map",
     "453.b776ef6b.chunk.js.map": "/Online-School-App/static/js/453.b776ef6b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ec6d9a33.css",
-    "static/js/main.45098c00.js"
+    "static/js/main.b0d11db3.js"
   ]
 }
